@@ -21,6 +21,10 @@ html {
     font-family: "Roboto-Regular";
 }
 
+.Ár {
+    text-align: right;
+}
+
 h1::first-letter {
     font-size: 150%;
 }

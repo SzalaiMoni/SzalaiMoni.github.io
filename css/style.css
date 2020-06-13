@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(fonts/OpenSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url(fonts/OpenSans-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+html {
+    color: grey;
+    font-family: "Roboto-Regular";
+}
+
+h1::first-letter {
+    font-size: 150%;
+}
+
+h1 {
+    color: brown;
+    font-family: "OpenSans-Regular";
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+h2::first-letter {
+    font-size: 150%;
+}
+
+
+h2 {
+    color: brown;
+    font-family: "OpenSans-Regular";
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+th {
+    color: #28A745;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 24px;
+}
+
+

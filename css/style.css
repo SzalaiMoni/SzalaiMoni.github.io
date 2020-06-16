@@ -52,6 +52,7 @@ th {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     font-size: 24px;
+    background-color: white;
 }
 
 a:link, a:visited {
@@ -68,6 +69,11 @@ a:link, a:visited {
     font-size: 20px;
 }
 
+a:hover, a:active {
+    background-color: rgb(255, 208, 0);
+    color: maroon;
+  }
+
 table {
     width: 100%;
 }
@@ -76,10 +82,21 @@ tr {
     height: 25px;
 }
 
+td {
+    margin: 0px;
+    border: 0px;
+}
+
 .container {
     width: 80%;
     background-color: white;
     margin: 0 auto;
     padding: 20px;
 }
- 
+
+tr:nth-child(odd) {
+    background-color: rgb(240, 226, 177);
+}
+tr:nth-child(even) {
+    background-color: rgb(251, 237, 200);
+}

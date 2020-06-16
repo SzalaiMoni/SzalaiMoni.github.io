@@ -19,10 +19,8 @@
 html {
     color: grey;
     font-family: "Roboto-Regular";
-}
-
-.Ár {
-    text-align: right;
+    background-color: rgb(255, 208, 0);
+    background-size: auto 100%;
 }
 
 h1::first-letter {
@@ -30,7 +28,7 @@ h1::first-letter {
 }
 
 h1 {
-    color: brown;
+    color: maroon;
     font-family: "OpenSans-Regular";
     font-size: 28px;
     text-transform: uppercase;
@@ -41,12 +39,12 @@ h2::first-letter {
     font-size: 150%;
 }
 
-
 h2 {
-    color: brown;
+    color: maroon;
     font-family: "OpenSans-Regular";
     text-transform: uppercase;
     letter-spacing: -2px;
+
 }
 
 th {
@@ -56,4 +54,32 @@ th {
     font-size: 24px;
 }
 
+a:link, a:visited {
+    background-color: maroon;
+    color: rgb(255, 208, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 33%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
 
+table {
+    width: 100%;
+}
+
+tr {
+    height: 25px;
+}
+
+.container {
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+}
+ 

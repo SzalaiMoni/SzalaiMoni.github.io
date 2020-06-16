@@ -76,15 +76,11 @@ a:hover, a:active {
 
 table {
     width: 100%;
+    border-collapse: collapse;
 }
 
 tr {
     height: 25px;
-}
-
-td {
-    margin: 0px;
-    border: 0px;
 }
 
 .container {

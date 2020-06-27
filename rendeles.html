@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendelés</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html">Elérhetőség</a>
+        <a href="etlap.html">Étlap</a>
+        <a href="akciok.html">Akciók</a>
+        <a href="rendeles.html">Rendelés</a>
+        <form>
+            <fieldset>
+                <legend>Személyes adatok</legend>
+                <div class="form-group">
+                    <table class="form-table">
+                        <tr class="form-row">
+                            <td><label for="name">Név: *</label></td>
+                            <td class="form-column"><input size="50" id="name" name="name" type="text" required></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="form-group">
+                    <table class="form-table">
+                        <tr class="form-row">
+                            <td><label for="email">Email cím: *</label></td>
+                            <td class="form-column"><input size="50" id="email" name="email" type="email" required></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="form-group">
+                    <table class="form-table">
+                        <tr class="form-row">
+                            <td><label for="address">Cím: *</label></td>
+                            <td class="form-column"><input size="50" id="address" name="address" type="text" required></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="form-group">
+                    <table class="form-table">
+                        <tr class="form-row">
+                            <td><label for="comment">Megjegyzés:</label></td>
+                            <td class="form-column"><textarea id="comment" name="comment" rows="5" cols="38"></textarea></td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Termék adatai</legend>
+                <span>Extra feltét:</span>
+                <div class="form-group">
+                    <input id="nothing" name="extra" type="radio" value="0">
+                    <label for="nothing">Nem kérek</label>
+                </div>
+                <div class="form-group">
+                    <input id="sajt" name="extra" type="radio" value="300">
+                    <label for="sajt">sajt (+300Ft)</label>
+                </div>
+                <div class="form-group">
+                    <input id="bacon" name="extra" type="radio" value="400">
+                    <label for="bacon">bacon (+400Ft)</label>
+                </div>
+                <div class="form-group">
+                    <input id="dupla-hús" name="extra" type="radio" value="1000">
+                    <label for="dupla-hús">dupla hús (+1.000Ft)</label>
+                </div>
+                <div class="form-group">
+                    <input id="sajt-bacon" name="extra" type="radio" value="700">
+                    <label for="sajt-bacon">sajt és bacon (+700Ft)</label>
+                </div>
+                <div class="form-group">
+                    <input id="sajt-duplahús" name="extra" type="radio" value="1300">
+                    <label for="sajt-duplahús">sajt és dupla hús (+1.300Ft)</label>
+                </div>
+                <div class="form-group">
+                    <label for="sauce">Szósz:</label>
+                    <select id="sauce" name="sauce">
+<!--                         <option value="0" selected>hagyományos</option>
+                        <option value="100">csípős +100FT</option> -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Mennyiség: </label>
+                    <input id="quantity" name="quantity" type="number" min="1" max="10">
+                </div>
+            </fieldset>
+            <div class="form-group">
+                Ár: <span class="show-amount">0</span>Ft
+            </div>
+            <div>
+                <button onclick="calcAmount()" type="button">Rendelés leadása</button>
+            </div>
+            <div class="form-group">
+                A házhozszállítás díja 5.000Ft alatti rendelés esetén 500Ft, amelyet a végösszeg tartalmaz.
+            </div>
+        </form>
+    </div>
+
+    <script src="js/rendeles.js"></script>
+
+</body>
+
+</html>

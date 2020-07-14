@@ -86,7 +86,7 @@ table.form-table {
 }
 
 tr {
-    height: 25px;
+    height: 35px;
 }
 
 .container {
@@ -111,11 +111,42 @@ td.form-column {
     text-align: right;
 }
 
-.akciok {
+div.akciok {
     background-color: rgb(240, 226, 177);
-    padding: 10px 10px 10px 10px;
+    padding: 0px 0px 0px 10px;
+    margin: 10px 0px 30px 0px;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 10px 10px 10px;
+    max-height: 300px;
+    min-height: 200px;
+}
+
+div.akcio {
+    width: 80%;
+    float: left;
+}
+
+div.akcio-kep {
+    width: 20%;
+    overflow: auto;
+}
+
+img.kep {
+    width: 70%;
+    height: 70%;
+    padding: 25px 20px 25px 20px;
+}
+
+img.etlap-kep-bal {
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+img.etlap-kep-jobb {
+    width: 30px;
+    height: 30px;
+    float: right;
 }
 
 .form-group {
